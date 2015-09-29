@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <widget xmlns = "http://www.w3.org/ns/widgets"
 xmlns:gap = "http://phonegap.com/ns/1.0"
-id = "com.fredrickabayie.pg1"
+id = "com.fredrickabayie.psc"
 versionCode = "11"
-version = "1.0.0">
+version = "1.1.0">
     <name>Product Scan</name>
     <description>
         An application to scan products barcodes
@@ -12,4 +12,6 @@ version = "1.0.0">
         Fredrick Abayie
     </author>
     <gap:plugin name="net.roughshod.plugins.barcodescanner" version="3.0.0" />
+    <icon src="icon.png" />
+    <gap:splash src="icon.png" />
 </widget>

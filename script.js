@@ -3,7 +3,7 @@
 
 function alertCallback() {
     "use strict";
-
+    alert ("Notification done");
 }
 
 $(function () {
@@ -13,20 +13,6 @@ $(function () {
             function (result) {
                 $("#code").val(result.text);
 //                    "Format: " + result.format + "\n" +
-                cordova.plugins.notification.local.schedule({
-    id: 1,
-    title: "Production Jour fixe",
-    text: "Duration 1h",
-    firstAt: monday_9_am,
-    every: "week",
-    sound: "file://sounds/reminder.mp3",
-    icon: "http://icons.com/?cal_id=1",
-    data: { meetingId:"123#fg8" }
-});
-
-cordova.plugins.notification.local.on("click", function (notification) {
-    joinMeeting(notification.data.meetingId);
-});
             },
             function (error) {
                 alert("Scanning failed: " + error);
@@ -34,3 +20,15 @@ cordova.plugins.notification.local.on("click", function (notification) {
         );
     });
 });
+
+
+document.addEventListener('deviceready', function () {
+    // window.plugin.notification.local is now available
+    "use strict";
+    window.plugin.notification.local.add({
+        id:         "2",  // A unique id of the notifiction
+        date:       Date,    // This expects a date object
+        message:    "First",  // The message that is displayed
+        title:      "Testing"  // The title of the message
+    }, alertCallback, scope);
+}, false);

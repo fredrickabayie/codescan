@@ -12,7 +12,7 @@ version = "1.6.0">
         Fredrick Abayie
     </author>
     <gap:plugin name="net.roughshod.plugins.barcodescanner" version="3.0.0" />
-    <gap:plugin name="de.appplant.cordova.plugin.local-notification"/>
+    <gap:plugin name="de.appplant.cordova.plugin.local-notification" />
     <icon src="icon.png" />
     <gap:splash src="icon.png" />
 </widget>

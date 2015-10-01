@@ -2,9 +2,9 @@
 <!DOCTYPE>
 <widget xmlns = "http://www.w3.org/ns/widgets"
 xmlns:gap = "http://phonegap.com/ns/1.0"
-id = "com.fredrickabayie.psc"
+id = "com.fredrickabayie.ntf"
 versioncode = "11"
-version = "1.1.0">
+version = "1.6.0">
     <name>Product Scan</name>
     <description>
         An application to scan products barcodes

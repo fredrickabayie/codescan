@@ -13,6 +13,7 @@ version = "1.1.0">
         Fredrick Abayie
     </author>
     <gap:plugin name="net.roughshod.plugins.barcodescanner" version="3.0.0" />
+    <gap:plugin name="org.apache.cordova.dialogs" version="0.2.10" />
     <icon src="icon.png" />
     <gap:splash src="icon.png" />
 </widget>
